@@ -1,0 +1,86 @@
+.navbar-container {
+  width: 100%;
+  height: 90px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container.light {
+  background: #000;
+  color: #fff;
+}
+
+.navbar-container.dark {
+  background: #fff;
+  color: #000;
+}
+
+.nav-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: inherit;
+}
+
+.nav-links .active-link {
+  color: rgb(100, 100, 174);
+  font-weight: 600;
+}
+
+.nav-links .inactive-link {
+  color: inherit;
+}
+
+.nav-wrapper button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all ease 0.5s;
+  background: inherit;
+  color: inherit;
+}
+
+/* .nav-wrapper button:hover {
+  border-radius: 40px;
+  background: rgb(100, 100, 174);
+  color: #fff;
+} */
+
+.navbar-container.dark .nav-wrapper button:hover,
+.navbar-container.light .nav-wrapper button:hover {
+  border-radius: 40px;
+  background: rgb(100, 100, 174);
+  color: #fff;
+}
+
+.navbar-container.light .nav-wrapper button {
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar-container.dark .nav-wrapper button {
+  background-color: #000;
+  color: #fff;
+}
